@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de Texto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="alura-section">
+    <img src="imagens/Logo.png" alt="Logo da Alura" class="alura-img">
+  </section>
+  <main>
+    <textarea name="input" id="input" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+    <aside>
+      <p class="alert-text"><img src="imagens/alerta.png" alt="Alerta" class="alert-img">Apenas letras minúsculas e sem
+        acento</p>
+      <button onclick="encrypt(document.getElementById('input').value)" class="btn dark-blue">Criptografar</button>
+      <button onclick="decrypt(document.getElementById('input').value)" class="btn white">Descriptografar</button>
+    </aside>
+  </main>
+  <section class="messages">
+    <img src="imagens/Arte-pessoa e lupa.png" alt="Pessoa com lupa" class="img disable">
+    <h1 class="advice-title disable">Nenhuma mensagem encontrada</h1>
+    <p class="advice-text disable">Digite um texto que você deseje criptografar ou descriptografar</p>
+    <p class="result-text"></p>
+    <button class="btn white enable copy"
+      onclick="copy(document.querySelector('.result-text').innerHTML)">Copiar</button>
+  </section>
+  <footer>
+    <p>Desenvolvido por <a href="https://github.com/VBDOL" target="_blank">VBDOL. DEV</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
