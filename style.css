@@ -303,9 +303,20 @@ main {
   }
 
   footer {
-    position: relative;
-    padding: 5px;
-  }
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer img {
+    width: 30px; /* Defina o tamanho do ícone conforme necessário */
+    vertical-align: middle;
+    margin-left: 10px; /* Adicione margem à esquerda para separar o texto e o ícone */
+}
 
   aside {
     text-align: center;
